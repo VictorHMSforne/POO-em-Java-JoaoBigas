@@ -39,8 +39,10 @@ public class Veiculo {
     private void validarAnoFabricacao(int anoFabricacao){ //SOMENTE AQUI USA NA CLASSE, se eu instanciar não tem como usar. Ou seja quem usa esse carinha é o set
         if (anoFabricacao <= 1500){
             System.out.println("Valor inválido!");
+        }else{
+            this.anoFabricacao = anoFabricacao;
         }
-        setAnoFabricacao(anoFabricacao);
+
     }
 }
 

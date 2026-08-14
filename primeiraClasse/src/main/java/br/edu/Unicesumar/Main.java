@@ -22,5 +22,7 @@ public class Main {
         Veiculo fiatArgo = new Veiculo("Fiat", "Argo",2022);
         fiatArgo.exibirDados();
 
+        fiatArgo.setAnoFabricacao(1300);
+
     }
 }
