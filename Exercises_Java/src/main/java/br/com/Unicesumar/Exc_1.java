@@ -6,6 +6,10 @@ public class Exc_1 {
     public static void main(String[] args){
         /*
         ============
+        Exercício 1: Entrada e Saída de dados
+        ============
+
+        ============
         1.1
         ============
         System.out.print("Digite um número: ");
@@ -42,7 +46,9 @@ public class Exc_1 {
         int number2 = scan.nextInt();
         System.out.printf("RESULTADO: %d ", number1 + number2 );
 
-         */
+        ============
+        1.4
+        ============
 
         System.out.println("================");
         System.out.println(" CALCULATOR 2.0 ");
@@ -59,6 +65,25 @@ public class Exc_1 {
         double media = (n1+n2+n3) / 3.0;
 
         System.out.printf("A Média Aritmética é : %f", media);
+
+        ============
+        1.4
+        ============
+
+        System.out.println("=======================");
+        System.out.println(" Antecessor e Sucessor ");
+        System.out.println("=======================");
+        System.out.println("\n");
+
+        System.out.println("Digite um número: ");
+        Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+
+        System.out.printf("Número Escolhido: %d \n",number);
+        System.out.printf("Antecessor: %d\n", number-1);
+        System.out.printf("Sucessor: %d", number+1);
+
+         */
 
 
     }
