@@ -17,7 +17,7 @@ public class Consulta {
 
     public void exibirDados(){
         System.out.println("CONSULTAS");
-        System.out.println("Data/Hora: %s - %s | Medico: %s | Paciente: %s",
+        System.out.printf("Data/Hora: %s - %s | Medico: %s | Paciente: %s",
                 data,hora,medico.getNome(),paciente.getNome()); //Aqui precisa colocar getNome, pois se não aparece o endereço de memória
     }
 }
