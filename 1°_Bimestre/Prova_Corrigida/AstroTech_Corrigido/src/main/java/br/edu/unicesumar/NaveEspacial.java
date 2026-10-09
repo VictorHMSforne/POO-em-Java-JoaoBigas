@@ -26,4 +26,6 @@ public class NaveEspacial {
         this.hangar = hangar;
     }
 
+    public Hangar getHangar() { return hangar; }
+
 }

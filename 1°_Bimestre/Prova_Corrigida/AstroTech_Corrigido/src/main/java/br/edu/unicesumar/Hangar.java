@@ -14,7 +14,7 @@ public class Hangar {
         this.naves = new NaveEspacial[capacidadeMaxima]; // Não fiz isso na prova, faltou
 //        this.proximaPosicao=0;
     }
-    
+
     public String getNome(){
         return nome;
     }
