@@ -13,7 +13,7 @@ public class NaveEspacial {
         else{
             this.pesoToneladas = 0;
         }
-        this.pesoToneladas = pesoToneladas;
+        
         this.anoFabricacao = anoFabricacao;
     }
 
