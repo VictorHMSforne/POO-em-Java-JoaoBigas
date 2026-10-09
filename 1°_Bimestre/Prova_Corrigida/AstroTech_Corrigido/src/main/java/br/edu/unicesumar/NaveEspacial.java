@@ -4,6 +4,7 @@ public class NaveEspacial {
     private String nome;
     private double pesoToneladas;
     private int anoFabricacao;
+    private Hangar hangar;
 
     public NaveEspacial(String nome, double pesoToneladas, int anoFabricacao) {
         this.nome = nome;
@@ -13,12 +14,16 @@ public class NaveEspacial {
         else{
             this.pesoToneladas = 0;
         }
-        
+
         this.anoFabricacao = anoFabricacao;
     }
 
     public String getNome(){
         return nome;
+    }
+
+    public void setHangar(Hangar hangar){
+        this.hangar = hangar;
     }
 
 }
