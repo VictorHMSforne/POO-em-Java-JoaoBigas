@@ -11,17 +11,16 @@ import java.sql.Statement;
 public class Main {
     public static void main(String[] args) {
 
-        String url = "jdbc:h2:meu_banco";
-        String user = "teste";
-        String senha = "";
+        Connection con = ConexaoBanco.getConexao();
 
-        try (Connection con = DriverManager.getConnection(url,user,senha)){
-            Statement stm = con.createStatement();
+        CrudUsuario crud = new CrudUsuario(con);
 
-            stm.execute("CREATE TABLE IF NOT"); // Criação do BD
+        crud.criarTabela();
 
-        }catch(SQLException ex){
+        Usuario joao = new Usuario(1,"Rob Son");
 
-        }
+       // crud.criarUsuario(joao);
+
+
     }
 }
