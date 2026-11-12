@@ -11,13 +11,19 @@ import java.sql.Statement;
 public class Main {
     public static void main(String[] args) {
 
-        Connection con = ConexaoBanco.getConexao();
+       // Connection con = ConexaoBanco.getConexao(); // Sem o try-with-resources ele fecha a conexão depois que o main encerra
 
-        CrudUsuario crud = new CrudUsuario(con);
+        // try-with-resources
+        try (Connection con = ConexaoBanco.getConexao()){
+            CrudUsuario crud = new CrudUsuario(con);
 
-        crud.criarTabela();
+            crud.criarTabela();
 
-        Usuario joao = new Usuario(1,"Rob Son");
+            Usuario joao = new Usuario(1,"Rob Son");
+        }catch (SQLException ex){
+            System.out.printf("Erro: %s", ex);
+        }
+
 
        // crud.criarUsuario(joao);
 

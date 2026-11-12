@@ -19,12 +19,16 @@ public class ConexaoBanco {
         String user = "root";
         String senha = "";
 
-        try (Connection con = DriverManager.getConnection(url,user,senha)){
+
+        try {
+            Connection con = DriverManager.getConnection(url,user,senha);
+            System.out.println("Conexão bem sucedida!");
             return con;
 
         }catch(SQLException ex){
             throw  new IllegalArgumentException("Erro ao Conectar com o Banco!");
 
         }
+
     }
 }
