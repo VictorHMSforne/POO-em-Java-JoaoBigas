@@ -1,0 +1,21 @@
+2026-11-12 21:19:54.927505-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USUARIO" already exists; SQL statement:
+CREATE TABLE usuario (id INT, nome VARCHAR(10)) [42101-252]
+2026-11-12 21:52:08.603603-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOME CHARACTER VARYING(10)": "'''); DELETE FROM usuario; --' (27)"; SQL statement:
+INSERT INTO usuario(id, nome) VALUES (?,?) [22001-252]
+2026-11-12 21:52:14.392819-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOME CHARACTER VARYING(10)": "'''); DELETE FROM usuario; --' (27)"; SQL statement:
+INSERT INTO usuario(id, nome) VALUES (?,?) [22001-252]
+2026-11-12 21:52:45.824319-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOME CHARACTER VARYING(10)": "'''); DELETE FROM usuario; --' (27)"; SQL statement:
+INSERT INTO usuario(id, nome) VALUES (?,?) [22001-252]
+2026-11-12 21:52:50.798619-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOME CHARACTER VARYING(10)": "'''); DELETE FROM usuario; --' (27)"; SQL statement:
+INSERT INTO usuario(id, nome) VALUES (?,?) [22001-252]
+2026-11-12 21:56:54.905385-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOME CHARACTER VARYING(10)": "'''); DELETE FROM usuario; --' (27)"; SQL statement:
+INSERT INTO usuario(id, nome) VALUES (?,?) [22001-252]
+2026-11-12 21:57:09.837128-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOME CHARACTER VARYING(10)": "'''); DELETE FROM usuario; --' (27)"; SQL statement:
+INSERT INTO usuario(id, nome) VALUES (?,?) [22001-252]
