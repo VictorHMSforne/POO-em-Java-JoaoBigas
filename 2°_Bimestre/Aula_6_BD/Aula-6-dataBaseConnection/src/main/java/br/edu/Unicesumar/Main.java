@@ -17,15 +17,17 @@ public class Main {
         try (Connection con = ConexaoBanco.getConexao()){
             CrudUsuario crud = new CrudUsuario(con);
 
-            crud.criarTabela();
+            //crud.criarTabela();
 
             Usuario joao = new Usuario(1,"Rob Son");
+
+            crud.listar();
         }catch (SQLException ex){
             System.out.printf("Erro: %s", ex);
         }
 
 
-       // crud.criarUsuario(joao);
+
 
 
     }

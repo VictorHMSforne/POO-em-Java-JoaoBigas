@@ -1,6 +1,7 @@
 package br.edu.Unicesumar;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -44,5 +45,26 @@ public class CrudUsuario {
             System.out.printf("Erro ao inserir usuário! %s", ex);
         }
 
+    }
+
+    public void listar(){
+        try{
+            Statement veiculo = conexao.createStatement();
+
+            String select = "SELECT id, nome FROM usuario";
+            ResultSet resultSelect = veiculo.executeQuery(select);
+
+
+            while(resultSelect.next()){
+                int id = resultSelect.getInt("id");
+                String nome = resultSelect.getString("nome");
+
+                System.out.printf("Id: %d - Nome:%s\n",id,nome);
+            }
+
+
+        }catch (SQLException ex){
+            System.out.printf("Erro ao listar: \n%s",ex);
+        }
     }
 }

@@ -6,6 +6,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ConexaoBanco {
+
+    private static final String URL = "jdbc:mysql://localhost:3306/banco_aula";
+    private static final String USER = "root";
+    private static final String ROOT = "";
+
     public static Connection getConexao(){
 
         //        Conexão Local com JDBC usando o banco h2
@@ -15,13 +20,9 @@ public class ConexaoBanco {
 
         // stm.execute("CREATE TABLE IF NOT"); // Criação do BD em h2
 
-        String url = "jdbc:mysql://localhost:3306/banco_aula";
-        String user = "root";
-        String senha = "";
-
 
         try {
-            Connection con = DriverManager.getConnection(url,user,senha);
+            Connection con = DriverManager.getConnection(URL,USER,ROOT);
             System.out.println("Conexão bem sucedida!");
             return con;
 
